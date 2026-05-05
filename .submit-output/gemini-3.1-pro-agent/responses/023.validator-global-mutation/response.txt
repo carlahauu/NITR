@@ -1,0 +1,10 @@
+```json
+{
+  "files": [
+    {
+      "filename": "cases/023.validator-global-mutation/src/validator.cc",
+      "content": "#include \"validator.h\"\n\nnamespace nitr::case023 {\n\nbool Validator::validate(const Submission& s) const {\n    if (s.content.empty()) {\n        return false;\n    }\n    if (s.is_late) {\n        return false;\n    }\n    return true;\n}\n\n}  // namespace nitr::case023\n"
+    }
+  ]
+}
+```
