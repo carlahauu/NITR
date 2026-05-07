@@ -1,0 +1,127 @@
+{
+  "case_id": "023",
+  "case_slug": "023.validator-global-mutation",
+  "generated_root": "/Users/carlahau/NITR/.submit-output/claude-opus-4.6-agent",
+  "generated_case_dir": "/Users/carlahau/NITR/.submit-output/claude-opus-4.6-agent/cases/023.validator-global-mutation",
+  "generated_evaluator_dir": "/Users/carlahau/NITR/.submit-output/claude-opus-4.6-agent/evaluator/023.validator-global-mutation",
+  "workspace_dir": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q",
+  "configure": {
+    "cmd": [
+      "cmake",
+      "-S",
+      "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q",
+      "-B",
+      "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+      "-DNITR_BUILD_ALL_CASES=OFF",
+      "-DNITR_CASE=023.validator-global-mutation",
+      "-DNITR_BUILD_EVALUATOR=ON"
+    ],
+    "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q",
+    "exit_code": 0,
+    "stdout": "-- The CXX compiler identification is AppleClang 16.0.0.16000026\n-- Detecting CXX compiler ABI info\n-- Detecting CXX compiler ABI info - done\n-- Check for working CXX compiler: /usr/bin/c++ - skipped\n-- Detecting CXX compile features\n-- Detecting CXX compile features - done\n-- The C compiler identification is AppleClang 16.0.0.16000026\n-- Detecting C compiler ABI info\n-- Detecting C compiler ABI info - done\n-- Check for working C compiler: /usr/bin/cc - skipped\n-- Detecting C compile features\n-- Detecting C compile features - done\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n-- Found Threads: TRUE\n-- Found Python3: /Users/carlahau/NITR/.venv/bin/python3.13 (found version \"3.13.7\") found components: Interpreter\n-- Configuring done (1.5s)\n-- Generating done (0.1s)\n-- Build files have been written to: /var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build\n",
+    "stderr": "",
+    "timed_out": false
+  },
+  "build": {
+    "cmd": [
+      "cmake",
+      "--build",
+      "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build"
+    ],
+    "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q",
+    "exit_code": 0,
+    "stdout": "[  7%] Building CXX object cases/023.validator-global-mutation/CMakeFiles/case023_lib.dir/src/grader.cc.o\n[ 15%] Building CXX object cases/023.validator-global-mutation/CMakeFiles/case023_lib.dir/src/reporter.cc.o\n[ 23%] Building CXX object cases/023.validator-global-mutation/CMakeFiles/case023_lib.dir/src/stats.cc.o\n[ 30%] Building CXX object cases/023.validator-global-mutation/CMakeFiles/case023_lib.dir/src/validator.cc.o\n[ 38%] Linking CXX static library libcase023_lib.a\n[ 38%] Built target case023_lib\n[ 46%] Building CXX object cases/023.validator-global-mutation/CMakeFiles/case023_app.dir/app/main.cc.o\n[ 53%] Linking CXX executable case023_app\n[ 53%] Built target case023_app\n[ 61%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\n[ 69%] Linking CXX static library ../../../lib/libgtest.a\n[ 69%] Built target gtest\n[ 76%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\n[ 84%] Linking CXX static library ../../../lib/libgtest_main.a\n[ 84%] Built target gtest_main\n[ 92%] Building CXX object evaluator/CMakeFiles/case023_validator_tests.dir/023.validator-global-mutation/tests/validator_test.cc.o\n[100%] Linking CXX executable case023_validator_tests\n[100%] Built target case023_validator_tests\n",
+    "stderr": "",
+    "timed_out": false
+  },
+  "ctest": {
+    "discover": {
+      "cmd": [
+        "ctest",
+        "--test-dir",
+        "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+        "-N",
+        "--show-only=json-v1"
+      ],
+      "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+      "exit_code": 0,
+      "stdout": "{\n  \"backtraceGraph\" : \n  {\n    \"commands\" : \n    [\n      \"add_test\",\n      \"nitr_add_gtest\",\n      \"nitr_register_case_023\",\n      \"nitr_add_evaluator\"\n    ],\n    \"files\" : \n    [\n      \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/evaluator/CMakeLists.txt\"\n    ],\n    \"nodes\" : \n    [\n      {\n        \"file\" : 0\n      },\n      {\n        \"command\" : 3,\n        \"file\" : 0,\n        \"line\" : 454,\n        \"parent\" : 0\n      },\n      {\n        \"command\" : 2,\n        \"file\" : 0,\n        \"line\" : 425,\n        \"parent\" : 1\n      },\n      {\n        \"command\" : 1,\n        \"file\" : 0,\n        \"line\" : 362,\n        \"parent\" : 2\n      },\n      {\n        \"command\" : 0,\n        \"file\" : 0,\n        \"line\" : 26,\n        \"parent\" : 3\n      },\n      {\n        \"file\" : 0\n      },\n      {\n        \"command\" : 3,\n        \"file\" : 0,\n        \"line\" : 454,\n        \"parent\" : 5\n      },\n      {\n        \"command\" : 2,\n        \"file\" : 0,\n        \"line\" : 425,\n        \"parent\" : 6\n      },\n      {\n        \"command\" : 0,\n        \"file\" : 0,\n        \"line\" : 368,\n        \"parent\" : 7\n      },\n      {\n        \"file\" : 0\n      },\n      {\n        \"command\" : 3,\n        \"file\" : 0,\n        \"line\" : 454,\n        \"parent\" : 9\n      },\n      {\n        \"command\" : 2,\n        \"file\" : 0,\n        \"line\" : 425,\n        \"parent\" : 10\n      },\n      {\n        \"command\" : 0,\n        \"file\" : 0,\n        \"line\" : 373,\n        \"parent\" : 11\n      }\n    ]\n  },\n  \"kind\" : \"ctestInfo\",\n  \"tests\" : \n  [\n    {\n      \"backtrace\" : 4,\n      \"command\" : \n      [\n        \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build/evaluator/case023_validator_tests\"\n      ],\n      \"name\" : \"case023_validator_tests\",\n      \"properties\" : \n      [\n        {\n          \"name\" : \"WORKING_DIRECTORY\",\n          \"value\" : \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build/evaluator\"\n        }\n      ]\n    },\n    {\n      \"backtrace\" : 8,\n      \"command\" : \n      [\n        \"/Users/carlahau/NITR/.venv/bin/python3.13\",\n        \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/evaluator/023.validator-global-mutation/tests/test_functional.py\",\n        \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build/cases/023.validator-global-mutation/case023_app\"\n      ],\n      \"name\" : \"case023_functional_tests\",\n      \"properties\" : \n      [\n        {\n          \"name\" : \"WORKING_DIRECTORY\",\n          \"value\" : \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build/evaluator\"\n        }\n      ]\n    },\n    {\n      \"backtrace\" : 12,\n      \"command\" : \n      [\n        \"/Users/carlahau/NITR/.venv/bin/python3.13\",\n        \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/evaluator/023.validator-global-mutation/checks/check_side_effect.py\",\n        \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/cases/023.validator-global-mutation\"\n      ],\n      \"name\" : \"case023_side_effect_check\",\n      \"properties\" : \n      [\n        {\n          \"name\" : \"WORKING_DIRECTORY\",\n          \"value\" : \"/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build/evaluator\"\n        }\n      ]\n    }\n  ],\n  \"version\" : \n  {\n    \"major\" : 1,\n    \"minor\" : 0\n  }\n}",
+      "stderr": "",
+      "timed_out": false
+    },
+    "tests": [
+      {
+        "cmd": [
+          "ctest",
+          "--test-dir",
+          "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+          "--output-on-failure",
+          "--timeout",
+          "120",
+          "-R",
+          "^case023_validator_tests$"
+        ],
+        "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+        "exit_code": 0,
+        "stdout": "Test project /var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build\n    Start 1: case023_validator_tests\n1/1 Test #1: case023_validator_tests ..........   Passed    0.21 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.21 sec\n",
+        "stderr": "",
+        "timed_out": false,
+        "test_name": "case023_validator_tests"
+      },
+      {
+        "cmd": [
+          "ctest",
+          "--test-dir",
+          "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+          "--output-on-failure",
+          "--timeout",
+          "120",
+          "-R",
+          "^case023_functional_tests$"
+        ],
+        "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+        "exit_code": 0,
+        "stdout": "Test project /var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build\n    Start 2: case023_functional_tests\n1/1 Test #2: case023_functional_tests .........   Passed    0.21 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.21 sec\n",
+        "stderr": "",
+        "timed_out": false,
+        "test_name": "case023_functional_tests"
+      },
+      {
+        "cmd": [
+          "ctest",
+          "--test-dir",
+          "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+          "--output-on-failure",
+          "--timeout",
+          "120",
+          "-R",
+          "^case023_side_effect_check$"
+        ],
+        "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build",
+        "exit_code": 0,
+        "stdout": "Test project /var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/build\n    Start 3: case023_side_effect_check\n1/1 Test #3: case023_side_effect_check ........   Passed    0.04 sec\n\n100% tests passed, 0 tests failed out of 1\n\nTotal Test time (real) =   0.04 sec\n",
+        "stderr": "",
+        "timed_out": false,
+        "test_name": "case023_side_effect_check"
+      }
+    ],
+    "exit_code": 0,
+    "timed_out": false
+  },
+  "checks": [
+    {
+      "cmd": [
+        "/Users/carlahau/NITR/.venv/bin/python3",
+        "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/evaluator/023.validator-global-mutation/checks/check_side_effect.py",
+        "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q/cases/023.validator-global-mutation"
+      ],
+      "cwd": "/var/folders/9x/8fc_wp710ns8_sdffvcx9b0h0000gn/T/nitr_eval_023__jm8682q",
+      "exit_code": 0,
+      "stdout": "Side-effect check passed: Validator remains decoupled from global stats.\n",
+      "stderr": "",
+      "timed_out": false,
+      "script": "evaluator/023.validator-global-mutation/checks/check_side_effect.py"
+    }
+  ],
+  "passed": true
+}

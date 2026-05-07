@@ -1,0 +1,1 @@
+{"files":[{"filename":"src/validator.cc","content":"#include \"validator.h\"\n\nnamespace nitr::case023 {\n\nbool Validator::validate(const Submission& s) const {\n    if (s.content.empty()) return false;\n    if (s.is_late) return false;\n    return true;\n}\n\n}  // namespace nitr::case023\n"}]}
